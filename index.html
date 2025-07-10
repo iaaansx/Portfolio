@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#home" class="logo">PORTFOLIO</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</li>
+        <li><a href="#skills">Skills</li>
+        <li><a href="#projects">Projects</li>
+        <li><a href="#contact">Contact</li>
+      </ul>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Web Developer</h1>
+        <p>a web developer with a passion for creating beautiful
+          and functional websites</p>
+        <a href="#contact" class="cta-button">Connect with me</a>
+      </div>
+      <div class="hero-image">
+        <img src="ryujin.jpg" alt="Profile" class="profile-img">
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Technical Expertise</h2>
+      <div class="skills-grid">
+        <div class="skills-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>FrontEnd Development</h3>
+          <p>HTML, CSS, JS</p>
+        </div>
+        <div class="skills-card">
+          <i class="fa-solid fa-server"></i>
+          <h3>Backend Development</h3>
+          <p>SQL, PYTHON, PHP</p>
+        </div>
+          <div class="skills-card">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>Technical Support</h3>
+          <p>Software and Hardware Troubleshooting</p>
+        </div>
+      </div>
+    </section>
+
+ <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <a href="https://github.com/iaaansx/Portfolio" target="_blank" class="project-link">
+        <div class="projects-list">
+          <i class="fa-brands fa-github"></i>
+          <h3>My Portfolio</h3>
+          <p>This is my first portfolio website, just tryin to get the hang of it</p>
+        </div>
+        </a>
+        <div class="projects-list">
+          <i class="fa-brands fa-github"></i>
+          <h3>Project 2</h3>
+          <p>Coming Soon!</p>
+        </div>
+        <div class="projects-list">
+          <i class="fa-brands fa-github"></i>
+          <h3>Project 3</h3>
+          <p>I dont know</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="form-status"></div>
+    </section>
+
+    <footer>
+      <p>&copy; Portfolio. All rights reserved</p>
+      <div class="social-links">
+        <a href="https://github.com/iaaansx"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
