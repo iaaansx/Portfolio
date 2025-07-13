@@ -64,6 +64,8 @@ body{
 }
 .nav-links a:hover ::after{
     width: 100%;
+
+/*HOME SECTION*/
 }
 .hero{
     min-height: 100vh;
@@ -112,7 +114,6 @@ body{
     max-width: 500px;
     color: var(--text);
 }
-
 .cta-button{
     display:  inline-block;
     padding: 1rem 2rem;
@@ -126,9 +127,31 @@ body{
     font-weight: bold;
 }
 
-.skills {
+/*ABOUT SECTION*/
+.about-skills {
     padding: 7rem 5%;
-    background: var(--darker-bg); 
+    background: var(--darker-bg);
+    text-align: center;
+}
+.about-content {
+    max-width: 700px;
+    margin: 0 auto 4rem auto;
+}
+.about-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text);
+}
+.skills-heading {
+    font-size: 2.5rem;
+    color: var(--text);
+    margin-bottom: 2rem;
+    text-align: center;
 }
 .skills-grid{
     display: grid;
@@ -161,9 +184,10 @@ body{
 }
 .progress{
     position: relative;
-    width: 380px;
+    width: 90%;
+    max-width: 380px;
     height: 30px;
-    margin: 70px 0 0;
+    margin: 70px auto 0 auto;
     background: var(--text);
     border-radius: 20px;
 }
@@ -188,6 +212,7 @@ body{
     border-radius: 20px;
     transition: width 2s ease-in-out;
 }
+
 footer{
     background: var(--darker-bg);
     padding: 3rem 5%;
@@ -231,6 +256,8 @@ footer{
     font-size: 1.5rem;
     padding-left: 2rem;
 }
+
+/*CONTACT SECTION*/
 }
   #contact {
     display: flex;
@@ -289,6 +316,7 @@ footer{
     color: green;
     font-weight: 500;
   }
+/*PROJECT SECTION*/
 .projects {
     padding: 7rem 5%;
     background: var(--darker-bg);  
