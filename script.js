@@ -14,3 +14,10 @@ window.addEventListener('scroll',()=>{
   navbar.style.backgroundColor = 'rgba(10,10,10,0.98)':
   navbar.style.backgroundColor = 'rgba(10,10,10,0.95)'
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const progressbars = document.querySelectorAll('.progress-bar');
+  for (let bar of progressbars) {
+    bar.style.width = bar.getAttribute('data-percent') + '%';
+  }
+});

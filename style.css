@@ -159,6 +159,35 @@ body{
     color: var(--accent);
     margin-bottom: 1rem;
 }
+.progress{
+    position: relative;
+    width: 380px;
+    height: 30px;
+    margin: 70px 0 0;
+    background: var(--text);
+    border-radius: 20px;
+}
+.progress span{
+    position: absolute;
+    top: -35px;
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 600;
+}
+.progress .progress-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 100%;
+    color: var(--text);
+    background: linear-gradient(90deg, var(--accent),var(--accent-glow));
+    color: var(--text);
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: width 2s ease-in-out;
+}
 footer{
     background: var(--darker-bg);
     padding: 3rem 5%;
